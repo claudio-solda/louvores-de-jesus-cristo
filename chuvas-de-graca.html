@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chuvas de Graça</title>
+<style>
+  :root{
+    --azul:#1e5f8c;
+    --azul-claro:#e8f2fa;
+    --dourado:#4a90c2;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:'Segoe UI', Arial, sans-serif;
+    background:linear-gradient(180deg,#f4f8fb 0%,#e8f2fa 100%);
+    color:#1a2b3c;
+    padding-bottom:40px;
+  }
+  header{
+    background:var(--azul);
+    color:#fff;
+    padding:22px 16px 18px;
+    text-align:center;
+    box-shadow:0 2px 8px rgba(0,0,0,.15);
+    position:sticky;
+    top:0;
+    z-index:10;
+  }
+  header a{
+    color:#dcebf7;
+    text-decoration:none;
+    font-size:14px;
+  }
+  h1{
+    margin:8px 0 0;
+    font-size:clamp(22px,6vw,32px);
+    letter-spacing:.5px;
+  }
+  .subtitulo{
+    font-size:13px;
+    color:#dcebf7;
+    margin-top:4px;
+  }
+  main{
+    max-width:700px;
+    margin:0 auto;
+    padding:20px 18px;
+  }
+  .estrofe{
+    background:#fff;
+    border-left:5px solid var(--azul);
+    border-radius:10px;
+    padding:18px 20px;
+    margin-bottom:18px;
+    box-shadow:0 2px 6px rgba(0,0,0,.06);
+    position:relative;
+  }
+  .estrofe .num{
+    font-size:11px;
+    font-weight:700;
+    color:var(--azul);
+    margin-bottom:8px;
+    letter-spacing:1px;
+  }
+  .refrao{
+    border-left:5px solid var(--dourado);
+    background:#f2f8fc;
+  }
+  .refrao::before{
+    content:"REFRÃO";
+    display:block;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:1px;
+    color:var(--dourado);
+    margin-bottom:8px;
+  }
+  p.linha{
+    margin:0 0 6px;
+    font-size:clamp(19px,4.6vw,24px);
+    line-height:1.5;
+  }
+  p.linha:last-child{margin-bottom:0;}
+  .controles{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    margin:20px 0 6px;
+  }
+  button{
+    background:var(--azul);
+    color:#fff;
+    border:none;
+    padding:10px 18px;
+    border-radius:20px;
+    font-size:15px;
+    cursor:pointer;
+  }
+  button:active{opacity:.8;}
+  .rodape{
+    text-align:center;
+    font-size:12px;
+    color:#7a8fa3;
+    margin-top:30px;
+  }
+</style>
+</head>
+<body>
+<header>
+  <a href="index.html">← Louvores</a>
+  <h1>1 — Chuvas de Graça</h1>
+  <div class="subtitulo">IJEFONT</div>
+</header>
+
+<main id="letra">
+
+  <div class="estrofe">
+    <div class="num">1ª ESTROFE</div>
+    <p class="linha">Deus prometeu com certeza</p>
+    <p class="linha">Chuvas de graça mandar;</p>
+    <p class="linha">Ele nos dá fortaleza,</p>
+    <p class="linha">E ricas bênçãos sem par</p>
+  </div>
+
+  <div class="estrofe refrao">
+    <p class="linha">Chuvas de graça,</p>
+    <p class="linha">Chuvas pedimos, Senhor;</p>
+    <p class="linha">Manda-nos chuvas constantes,</p>
+    <p class="linha">Chuvas do Consolador.</p>
+  </div>
+
+  <div class="estrofe">
+    <div class="num">2ª ESTROFE</div>
+    <p class="linha">Cristo nos tem concedido</p>
+    <p class="linha">O santo Consolador,</p>
+    <p class="linha">De plena paz nos enchido,</p>
+    <p class="linha">Para o reinado do amor.</p>
+  </div>
+
+  <div class="estrofe refrao">
+    <p class="linha">Chuvas de graça,</p>
+    <p class="linha">Chuvas pedimos, Senhor;</p>
+    <p class="linha">Manda-nos chuvas constantes,</p>
+    <p class="linha">Chuvas do Consolador.</p>
+  </div>
+
+  <div class="estrofe">
+    <div class="num">3ª ESTROFE</div>
+    <p class="linha">Dá-nos, Senhor, amplamente,</p>
+    <p class="linha">Teu grande gozo e poder;</p>
+    <p class="linha">Fonte de amor permanente,</p>
+    <p class="linha">Põe dentro de nosso ser.</p>
+  </div>
+
+  <div class="estrofe refrao">
+    <p class="linha">Chuvas de graça,</p>
+    <p class="linha">Chuvas pedimos, Senhor;</p>
+    <p class="linha">Manda-nos chuvas constantes,</p>
+    <p class="linha">Chuvas do Consolador.</p>
+  </div>
+
+  <div class="estrofe">
+    <div class="num">4ª ESTROFE</div>
+    <p class="linha">Faze os teus servos piedosos,</p>
+    <p class="linha">Dá-lhes virtude e valor,</p>
+    <p class="linha">Dando os teus dons preciosos,</p>
+    <p class="linha">Do santo Preceptor.</p>
+  </div>
+
+  <div class="estrofe refrao">
+    <p class="linha">Chuvas de graça,</p>
+    <p class="linha">Chuvas pedimos, Senhor;</p>
+    <p class="linha">Manda-nos chuvas constantes,</p>
+    <p class="linha">Chuvas do Consolador.</p>
+  </div>
+
+  <div class="controles">
+    <button onclick="mudarFonte(2)">A+</button>
+    <button onclick="mudarFonte(-2)">A-</button>
+  </div>
+
+  <div class="rodape">© Irmão Claudio</div>
+</main>
+
+<script>
+function mudarFonte(delta){
+  const linhas = document.querySelectorAll('.linha');
+  linhas.forEach(l=>{
+    const atual = parseFloat(getComputedStyle(l).fontSize);
+    l.style.fontSize = (atual + delta) + 'px';
+  });
+}
+</script>
+
+</body>
+</html>
