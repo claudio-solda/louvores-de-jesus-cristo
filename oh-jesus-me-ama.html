@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oh! Jesus Me Ama</title>
+<style>
+  :root{
+    --azul:#1e5f8c;
+    --azul-claro:#e8f2fa;
+    --dourado:#4a90c2;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:'Segoe UI', Arial, sans-serif;
+    background:linear-gradient(180deg,#f4f8fb 0%,#e8f2fa 100%);
+    color:#1a2b3c;
+    padding-bottom:40px;
+  }
+  header{
+    background:var(--azul);
+    color:#fff;
+    padding:22px 16px 18px;
+    text-align:center;
+    box-shadow:0 2px 8px rgba(0,0,0,.15);
+    position:sticky;
+    top:0;
+    z-index:10;
+  }
+  header a{
+    color:#dcebf7;
+    text-decoration:none;
+    font-size:14px;
+  }
+  h1{
+    margin:8px 0 0;
+    font-size:clamp(24px,6vw,34px);
+    letter-spacing:.5px;
+  }
+  .subtitulo{
+    font-size:13px;
+    color:#dcebf7;
+    margin-top:4px;
+  }
+  main{
+    max-width:700px;
+    margin:0 auto;
+    padding:20px 18px;
+  }
+  .estrofe{
+    background:#fff;
+    border-left:5px solid var(--azul);
+    border-radius:10px;
+    padding:18px 20px;
+    margin-bottom:18px;
+    box-shadow:0 2px 6px rgba(0,0,0,.06);
+  }
+  .refrao{
+    border-left:5px solid var(--dourado);
+    background:#f2f8fc;
+  }
+  .refrao::before{
+    content:"REFRÃO";
+    display:block;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:1px;
+    color:var(--dourado);
+    margin-bottom:8px;
+  }
+  p.linha{
+    margin:0 0 6px;
+    font-size:clamp(19px,4.6vw,24px);
+    line-height:1.5;
+  }
+  p.linha:last-child{margin-bottom:0;}
+  .controles{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    margin:20px 0 6px;
+  }
+  button{
+    background:var(--azul);
+    color:#fff;
+    border:none;
+    padding:10px 18px;
+    border-radius:20px;
+    font-size:15px;
+    cursor:pointer;
+  }
+  button:active{opacity:.8;}
+  .rodape{
+    text-align:center;
+    font-size:12px;
+    color:#7a8fa3;
+    margin-top:30px;
+  }
+</style>
+</head>
+<body>
+<header>
+  <a href="index.html">← Louvores</a>
+  <h1>169 — Oh! Jesus Me Ama</h1>
+  <div class="subtitulo">IJEFONT</div>
+</header>
+
+<main id="letra">
+
+  <div class="estrofe">
+    <p class="linha">Longe do Senhor, andava,</p>
+    <p class="linha">No caminho de horror,</p>
+    <p class="linha">Por Jesus não perguntava,</p>
+    <p class="linha">Nem queria o Seu amor.</p>
+  </div>
+
+  <div class="estrofe refrao">
+    <p class="linha">Oh! por que Jesus me ama?</p>
+    <p class="linha">Eu não posso t'explicar!</p>
+    <p class="linha">Mas, a ti também te chama,</p>
+    <p class="linha">Pois deseja te salvar!</p>
+  </div>
+
+  <div class="estrofe">
+    <p class="linha">No juízo não pensava,</p>
+    <p class="linha">Nem na minha perdição,</p>
+    <p class="linha">Nem minh'alma desejava</p>
+    <p class="linha">A eterna Salvação.</p>
+  </div>
+
+  <div class="estrofe refrao">
+    <p class="linha">Oh! por que Jesus me ama?</p>
+    <p class="linha">Eu não posso t'explicar!</p>
+    <p class="linha">Mas, a ti também te chama,</p>
+    <p class="linha">Pois deseja te salvar!</p>
+  </div>
+
+  <div class="estrofe">
+    <p class="linha">Já cansado do pecado,</p>
+    <p class="linha">Fui aos pés do Salvador,</p>
+    <p class="linha">E ali, caiu o fardo</p>
+    <p class="linha">De tristezas e de dor.</p>
+  </div>
+
+  <div class="estrofe refrao">
+    <p class="linha">Oh! por que Jesus me ama?</p>
+    <p class="linha">Eu não posso t'explicar!</p>
+    <p class="linha">Mas, a ti também te chama,</p>
+    <p class="linha">Pois deseja te salvar!</p>
+  </div>
+
+  <div class="estrofe">
+    <p class="linha">Como é maravilhoso.</p>
+    <p class="linha">Pertencer ao meu Jesus!</p>
+    <p class="linha">Ter a graça, o repouso,</p>
+    <p class="linha">E ficar ao pé da cruz!</p>
+  </div>
+
+  <div class="estrofe refrao">
+    <p class="linha">Oh! por que Jesus me ama?</p>
+    <p class="linha">Eu não posso t'explicar!</p>
+    <p class="linha">Mas, a ti também te chama,</p>
+    <p class="linha">Pois deseja te salvar!</p>
+  </div>
+
+  <div class="controles">
+    <button onclick="mudarFonte(2)">A+</button>
+    <button onclick="mudarFonte(-2)">A-</button>
+  </div>
+
+  <div class="rodape">© Irmão Claudio</div>
+</main>
+
+<script>
+function mudarFonte(delta){
+  const linhas = document.querySelectorAll('.linha');
+  linhas.forEach(l=>{
+    const atual = parseFloat(getComputedStyle(l).fontSize);
+    l.style.fontSize = (atual + delta) + 'px';
+  });
+}
+</script>
+
+</body>
+</html>
