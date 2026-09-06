@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>De Valor em Valor</title>
+<style>
+:root{
+  --azul:#1e5f8c;
+  --dourado:#4a90c2;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  font-family:'Segoe UI', Arial, sans-serif;
+  background:linear-gradient(180deg,#f4f8fb 0%,#e8f2fa 100%);
+  color:#1a2b3c;
+  padding-bottom:40px;
+}
+header{
+  background:var(--azul);
+  color:#fff;
+  padding:22px 16px 18px;
+  text-align:center;
+  box-shadow:0 2px 8px rgba(0,0,0,.15);
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+header a{
+  color:#dcebf7;
+  text-decoration:none;
+  font-size:14px;
+}
+h1{
+  margin:8px 0 0;
+  font-size:clamp(24px,6vw,34px);
+  letter-spacing:.5px;
+}
+.subtitulo{
+  font-size:13px;
+  color:#dcebf7;
+  margin-top:4px;
+}
+main{
+  max-width:700px;
+  margin:0 auto;
+  padding:20px 18px;
+}
+.estrofe{
+  background:#fff;
+  border-left:5px solid var(--azul);
+  border-radius:10px;
+  padding:18px 20px;
+  margin-bottom:18px;
+  box-shadow:0 2px 6px rgba(0,0,0,.06);
+}
+.refrao{
+  border-left:5px solid var(--dourado);
+  background:#f2f8fc;
+}
+.refrao::before{
+  content:"REFRÃO";
+  display:block;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:1px;
+  color:var(--dourado);
+  margin-bottom:8px;
+}
+p.linha{
+  margin:0 0 6px;
+  font-size:clamp(19px,4.6vw,24px);
+  line-height:1.5;
+}
+p.linha:last-child{margin-bottom:0;}
+.controles{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  margin:20px 0 6px;
+}
+button{
+  background:var(--azul);
+  color:#fff;
+  border:none;
+  padding:10px 18px;
+  border-radius:20px;
+  font-size:15px;
+  cursor:pointer;
+}
+button:active{opacity:.8;}
+.rodape{
+  text-align:center;
+  font-size:12px;
+  color:#7a8fa3;
+  margin-top:30px;
+}
+</style>
+</head>
+<body>
+<header>
+<a href="index.html">← Louvores</a>
+<h1>186 — De Valor em Valor</h1>
+<div class="subtitulo">IJEFONT</div>
+</header>
+<main id="letra">
+
+<div class="estrofe">
+<p class="linha">Pela fé que uma vez me foi dada,</p>
+<p class="linha">Pra seguir o Cordeiro de Deus,</p>
+<p class="linha">Pela graça de Deus enviada,</p>
+<p class="linha">Andarei, com valor, para os céus.</p>
+</div>
+
+<div class="estrofe refrao">
+<p class="linha">Quero andar de valor em valor</p>
+<p class="linha">E seguir a Jesus, meu Senhor;</p>
+<p class="linha">Té que um dia receba no céu</p>
+<p class="linha">A coroa, que me dará Deus.</p>
+</div>
+
+<div class="estrofe">
+<p class="linha">De Deus, quero vestir a armadura,</p>
+<p class="linha">Pra lutar com coragem e valor.</p>
+<p class="linha">Pois aqui a peleja é dura,</p>
+<p class="linha">Contra as hostes do vil tentador.</p>
+</div>
+
+<div class="estrofe refrao">
+<p class="linha">Quero andar de valor em valor</p>
+<p class="linha">E seguir a Jesus, meu Senhor;</p>
+<p class="linha">Té que um dia receba no céu</p>
+<p class="linha">A coroa, que me dará Deus.</p>
+</div>
+
+<div class="estrofe">
+<p class="linha">Em Jesus eu farei mil proezas</p>
+<p class="linha">No combate da fé e do amor;</p>
+<p class="linha">NEle tenho vigor e destreza,</p>
+<p class="linha">P'ra lutar e pra ser vencedor!</p>
+</div>
+
+<div class="estrofe refrao">
+<p class="linha">Quero andar de valor em valor</p>
+<p class="linha">E seguir a Jesus, meu Senhor;</p>
+<p class="linha">Té que um dia receba no céu</p>
+<p class="linha">A coroa, que me dará Deus.</p>
+</div>
+
+<div class="estrofe">
+<p class="linha">Eu direi, ao findar esta liça:</p>
+<p class="linha">Combati o combate de amor</p>
+<p class="linha">E coroa terei de justiça.</p>
+<p class="linha">Que no céu me dará o Senhor.</p>
+</div>
+
+<div class="estrofe refrao">
+<p class="linha">Quero andar de valor em valor</p>
+<p class="linha">E seguir a Jesus, meu Senhor;</p>
+<p class="linha">Té que um dia receba no céu</p>
+<p class="linha">A coroa, que me dará Deus.</p>
+</div>
+
+<div class="controles">
+<button onclick="mudarFonte(2)">A+</button>
+<button onclick="mudarFonte(-2)">A-</button>
+</div>
+
+<div class="rodape">© Irmão Claudio</div>
+</main>
+<script>
+function mudarFonte(delta){
+  const linhas = document.querySelectorAll('.linha');
+  linhas.forEach(l=>{
+    const atual = parseFloat(getComputedStyle(l).fontSize);
+    l.style.fontSize = (atual + delta) + 'px';
+  });
+}
+</script>
+</body>
+</html>
