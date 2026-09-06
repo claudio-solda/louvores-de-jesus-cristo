@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1e5f8c">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<title>Louvores de Jesus Cristo</title>
+<style>
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:'Segoe UI', Arial, sans-serif;
+    background:linear-gradient(180deg,#f4f8fb 0%,#e8f2fa 100%);
+    color:#1a2b3c;
+    min-height:100vh;
+  }
+  header{
+    background:#1e5f8c;
+    color:#fff;
+    padding:26px 16px;
+    text-align:center;
+    box-shadow:0 2px 8px rgba(0,0,0,.15);
+  }
+  h1{margin:0;font-size:clamp(24px,6vw,32px);}
+  .sub{font-size:13px;color:#dcebf7;margin-top:6px;}
+  main{max-width:600px;margin:0 auto;padding:24px 18px;}
+  .card{
+    display:block;
+    background:#fff;
+    border-radius:12px;
+    padding:18px 20px;
+    margin-bottom:14px;
+    text-decoration:none;
+    color:#1a2b3c;
+    box-shadow:0 2px 6px rgba(0,0,0,.07);
+    border-left:5px solid #1e5f8c;
+  }
+  .card:active{opacity:.75;}
+  .card .titulo{font-size:19px;font-weight:600;}
+  .card .igreja{font-size:13px;color:#7a8fa3;margin-top:3px;}
+  .rodape{text-align:center;font-size:12px;color:#7a8fa3;margin-top:30px;}
+</style>
+</head>
+<body>
+
+<header>
+  <svg width="52" height="52" viewBox="0 0 64 64" style="margin-bottom:4px;">
+    <path d="M14 54 C14 30, 20 8, 40 6 C48 5, 52 10, 50 16 C42 15, 34 22, 32 34 L32 54 Z" fill="#7fb8e0" stroke="#2f7fb0" stroke-width="1.5"/>
+    <line x1="20" y1="52" x2="38" y2="12" stroke="#fff" stroke-width="1" opacity="0.85"/>
+    <line x1="22" y1="52" x2="39.5" y2="15" stroke="#fff" stroke-width="1" opacity="0.85"/>
+    <line x1="24" y1="52" x2="41" y2="18" stroke="#fff" stroke-width="1" opacity="0.85"/>
+    <line x1="26" y1="52" x2="42.3" y2="21" stroke="#fff" stroke-width="1" opacity="0.85"/>
+    <line x1="28" y1="52" x2="43.5" y2="24" stroke="#fff" stroke-width="1" opacity="0.85"/>
+    <line x1="30" y1="52" x2="44.5" y2="27" stroke="#fff" stroke-width="1" opacity="0.85"/>
+    <rect x="12" y="52" width="22" height="5" rx="2" fill="#14507a"/>
+  </svg>
+  <h1>Louvores de Jesus Cristo</h1>
+  <div class="sub">IJEFONT</div>
+</header>
+<main>
+  <a class="card" href="divino-companheiro.html">
+    <div class="titulo">Divino Companheiro</div>
+    <div class="igreja">Toque para ver a letra</div>
+  </a>
+
+  <a class="card" href="um-povo-forte.html">
+    <div class="titulo">340 — Um Povo Forte</div>
+    <div class="igreja">Toque para ver a letra</div>
+  </a>
+
+  <a class="card" href="chuvas-de-graca.html">
+    <div class="titulo">1 — Chuvas de Graça</div>
+    <div class="igreja">Toque para ver a letra</div>
+  </a>
+
+  <a class="card" href="oh-jesus-me-ama.html">
+    <div class="titulo">169 — Oh! Jesus Me Ama</div>
+    <div class="igreja">Toque para ver a letra</div>
+  </a>
+
+  <a class="card" href="a-hora-do-salvador.html">
+    <div class="titulo">A Hora do Salvador</div>
+    <div class="igreja">Toque para ver a letra</div>
+  </a>
+
+  <a class="card" href="guarda-o-contacto.html">
+    <div class="titulo">77 — Guarda o Contacto</div>
+    <div class="igreja">Toque para ver a letra</div>
+  </a>
+
+  <a class="card" href="eu-te-louvo.html">
+    <div class="titulo">10 — Eu Te Louvo</div>
+    <div class="igreja">Toque para ver a letra</div>
+  </a>
+
+  <a class="card" href="firme-nas-promessas.html">
+    <div class="titulo">107 — Firme nas Promessas</div>
+    <div class="igreja">Toque para ver a letra</div>
+  </a>
+
+  <a class="card" href="de-valor-em-valor.html">
+    <div class="titulo">186 — De Valor em Valor</div>
+    <div class="igreja">Toque para ver a letra</div>
+  </a>
+
+  <a class="card" href="a-alma-abatida.html">
+    <div class="titulo">193 — A Alma Abatida</div>
+    <div class="igreja">Toque para ver a letra</div>
+  </a>
+
+  <a class="card" href="eu-nao-mudo.html">
+    <div class="titulo">Eu Não Mudo</div>
+    <div class="igreja">Toque para ver a letra</div>
+  </a>
+
+  <a class="card" href="viverei-viveras.html">
+    <div class="titulo">Viverei, Viverás</div>
+    <div class="igreja">Toque para ver a letra</div>
+  </a>
+
+  <div class="rodape">© Irmão Claudio</div>
+</main>
+
+<script>
+(function(){
+  function addEyeToggles(){
+    document.querySelectorAll('input[type="password"]').forEach(function(inp){
+      if(inp.dataset.eyeAdded) return;
+      inp.dataset.eyeAdded = '1';
+      var cs = window.getComputedStyle(inp);
+      var hasExplicitWidth = !!inp.style.width;
+      var wrap = document.createElement('span');
+      wrap.style.position = 'relative';
+      if(hasExplicitWidth){
+        wrap.style.display = 'inline-block';
+        wrap.style.width = inp.style.width;
+      } else {
+        wrap.style.display = 'block';
+        wrap.style.width = '100%';
+      }
+      wrap.style.marginTop = cs.marginTop;
+      wrap.style.marginBottom = cs.marginBottom;
+      inp.style.marginTop = '0';
+      inp.style.marginBottom = '0';
+      inp.parentNode.insertBefore(wrap, inp);
+      wrap.appendChild(inp);
+      inp.style.width = '100%';
+      inp.style.boxSizing = 'border-box';
+      inp.style.paddingRight = '36px';
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      btn.setAttribute('aria-label','Mostrar ou ocultar senha');
+      btn.textContent = '\u{1F441}';
+      btn.style.cssText = 'position:absolute;right:4px;top:50%;transform:translateY(-50%);background:transparent;border:none;cursor:pointer;font-size:17px;padding:6px;line-height:1;opacity:.6;';
+      btn.addEventListener('click', function(){
+        var showing = inp.type === 'text';
+        inp.type = showing ? 'password' : 'text';
+        btn.textContent = showing ? '\u{1F441}' : '\u{1F648}';
+        btn.style.opacity = showing ? '.6' : '1';
+        inp.focus();
+      });
+      wrap.appendChild(btn);
+    });
+  }
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', addEyeToggles);
+  } else {
+    addEyeToggles();
+  }
+  var obs = new MutationObserver(addEyeToggles);
+  if(document.body){
+    obs.observe(document.body, {childList:true, subtree:true});
+  } else {
+    document.addEventListener('DOMContentLoaded', function(){
+      obs.observe(document.body, {childList:true, subtree:true});
+    });
+  }
+})();
+</script>
+
+</body>
+</html>
