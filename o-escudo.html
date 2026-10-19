@@ -118,6 +118,11 @@ button:active{opacity:.8;}
 
 <div class="controles">
 <button onclick="abrirEditor()">✏️ Colar / editar letra</button>
+<button onclick="alternarFoto()">📷 Ver foto da folha</button>
+</div>
+
+<div id="foto" style="display:none;margin-bottom:18px;">
+<img src="o-escudo.jpg" alt="Folha do louvor O Escudo" style="width:100%;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,.2);">
 </div>
 
 <div class="controles">
@@ -152,6 +157,7 @@ function abrirEditor(){
   document.getElementById('texto').value=t;
   document.getElementById('editor').style.display='block';
 }
+function alternarFoto(){const f=document.getElementById('foto');f.style.display=f.style.display==='none'?'block':'none';}
 function fecharEditor(){document.getElementById('editor').style.display='none';}
 function salvarLetra(){
   try{localStorage.setItem(CHAVE,document.getElementById('texto').value);}catch(e){}
